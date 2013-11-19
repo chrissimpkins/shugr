@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shugr | Rapid HTML Development</title>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/codemirror.css" />
+	<link rel="stylesheet" href="css/shugr.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/codemirror.js"></script>
+	<script src="js/xml.js"></script>
+	<script src="js/emmet.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+</head>
+<body>
+	<div id="shugr-title"><img src="img/shugr-logo.png" alt="Shugr | Rapid HTML Development"><span class="disappear"><div id="tagline">HTML</div></span></div>
+	<div id="nav-panel" class="disappear">&lt; <a href="#" class="nav-button"><i class="fa fa-download"></i></a> <a href="#" class="nav-button"><i class="fa fa-question"></i></a> &gt;</div>
+	<form><textarea id="code" name="code"></textarea></form>
+		<script>
+			CodeMirror.fromTextArea(document.getElementById("code"), {
+				theme: 'espresso',
+				mode : "text/html",
+				lineNumbers : true,
+				profile: 'xhtml'
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$('.CodeMirror-scroll').css('height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-scroll').css('min-height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-scroll').css('max-height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-gutter').css('min-height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-gutter').css('min-height', (window.innerHeight - 200) + 'px');
+			});
+			$(window).resize(_.debounce(function(){
+    			$('.CodeMirror-scroll').css('height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-scroll').css('min-height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-scroll').css('max-height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-gutter').css('min-height', (window.innerHeight - 200) + 'px');
+    			$('.CodeMirror-gutter').css('min-height', (window.innerHeight - 200) + 'px');
+			},250));
+		</script>
+	<footer>
+		<a href="http://twitter.com/csimpkins" id="tbird"><i class="fa fa-twitter fa-2x"></i></a>
+		<br><div id="license">Developed by Chris Simpkins, MIT License</div>
+	</footer>
+</body>
+</html>

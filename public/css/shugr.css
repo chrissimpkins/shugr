@@ -1,0 +1,72 @@
+body {
+	background-color:#24C0EB;
+}
+footer{
+	height:50px;
+	width:100%;
+	text-align:center;
+	margin:0;
+	bottom:0;
+	position:absolute;
+	padding:0;
+	color:#FFF;
+}
+a {
+	color:#FFF;
+}
+#star {
+	color:#223E54;
+}
+#shugr-title{
+	font-size:72px;
+	margin-top:15px !important;
+	margin-left:35px;
+	color:#FFF;
+}
+#tagline{
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans !important;
+	font-size:75px;
+	letter-spacing:-5px;
+	opacity:0.3;
+	display: inline-block;
+}
+#nav-panel{
+	color:#fafafa;
+	font-size:28px;
+	text-align:right;
+	margin-top: -40px;
+	margin-right:10px;
+	padding-bottom:5px;
+}
+.nav-button {
+	padding-left:5px;
+	opacity:0.3;
+	color:#FFF;
+}
+.nav-button:hover {
+	color:#FFF;
+	opacity:1.0;
+}
+#tbird{
+	opacity:0.5;
+	color:#FFF;
+}
+#tbird:hover{
+	opacity:1.0;
+}
+#license{
+	margin-top:-2px;
+	opacity:0.5;
+	font-size:10px;
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans !important;
+	letter-spacing:1px;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	.disappear {
+		display:none;
+	}
+
+}
+
+
