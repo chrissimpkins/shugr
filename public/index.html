@@ -1,33 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html itemscope itemtype="http://schema.org/WebApplication" lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Shugr | Rapid HTML Development</title>
+	<meta itemprop="name" content="Shugr | Rapid HTML Editor with Emmett Syntax">
+	<meta itemprop="description" content="A rapid HTML editor that uses the Emmett syntax">
+	<title>Shugr | Rapid HTML File Editor with Emmett Syntax</title>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content='A rapid HTML editor that uses the Emmett syntax'>
 	<link rel="stylesheet" href="css/codemirror.css" />
 	<link rel="stylesheet" href="css/shugr.css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="shortcut icon" href="/favicon.ico">
 
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="js/codemirror.js"></script>
 	<script src="js/xml.js"></script>
 	<script src="js/emmet.min.js"></script>
 	<script src="js/underscore-min.js"></script>
+	<script src="js/shugr.js"></script>
 </head>
 <body>
-	<div id="shugr-title"><img src="img/shugr-logo.png" alt="Shugr | Rapid HTML Development"></div>
-	<div id="nav-panel" class="disappear"><span class="fa-stack fa-lg"><a href="#" class="nav-button"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-download fa-stack-1x"></i></a></span> <span class="fa-stack fa-lg"><a href="#" class="nav-button"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-question fa-stack-1x"></i></a></div>
+	<div id="shugr-title"><img src="img/shugr-logo.png" alt="Shugr | Rapid HTML Development with the Shugr Editor"></div>
+	<div id="nav-panel" class="disappear">
+		<span id="dlbtn" class="fa-stack fa-lg nav-button"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-download fa-stack-1x"></i>
+		</span>
+		<span id="helpbtn" class="fa-stack fa-lg nav-button"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-question fa-stack-1x"></i></span>
+	</div>
 	<form><textarea id="code" name="code"></textarea></form>
 		<script>
-			CodeMirror.fromTextArea(document.getElementById("code"), {
-				theme: 'espresso',
-				mode : "text/html",
-				lineNumbers : true,
-				profile: 'xhtml'
-			});
+		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+			theme: 'espresso',
+			mode : "text/html",
+			lineNumbers : true,
+			profile: 'xhtml'
+		});
+
 		</script>
+
 		<script>
 			$(document).ready(function() {
 				$('.CodeMirror-scroll').css('height', (window.innerHeight - 200) + 'px');
@@ -45,8 +56,10 @@
 			},250));
 		</script>
 	<footer>
-		<a href="http://twitter.com/csimpkins" id="tbird"><i class="fa fa-twitter fa-2x"></i></a>
-		<br><div id="license">Developed by Chris Simpkins, MIT License</div>
+	<div id="footerdiv">
+		<a href="http://twitter.com/csimpkins" id="tbird"><i class="fa fa-twitter fa-2x"></i></a><a href="http://github.com/chrissimpkins/shugr" id="ghub"><i class="fa fa-github fa-2x"></i></a>
+		<br><div id="license">Developed by <a href="http://github.com/chrissimpkins">Chris Simpkins</a>, <a href="https://github.com/chrissimpkins/shugr/blob/master/LICENSE">MIT License</a></div>
+	</div>
 	</footer>
 </body>
 </html>

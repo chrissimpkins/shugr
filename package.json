@@ -1,7 +1,7 @@
 {
-  "name":"shugr",
+  "name": "shugr",
   "description": "Rapid HTML development",
-  "version":"0.0.1",
+  "version": "0.0.1",
   "author": {
     "name": "Christopher Simpkins",
     "email": "git.simpkins@gmail.com"
@@ -20,13 +20,13 @@
     "type": "git",
     "url": "https://github.com/chrissimpkins/shugr.git"
   },
-  "dependencies":{
-      "express":"3.x",
-      "request":"2.27.x",
-      "validator": "2.0.x"
+  "dependencies": {
+    "express": "~3.4.7",
+    "request": "~2.27.0",
+    "validator": "~2.0.0"
   },
   "engines": {
-       "node" : "0.10.x",
-       "npm" :  "1.3.x"
+    "node": "0.10.x",
+    "npm": "1.3.x"
   }
 }
