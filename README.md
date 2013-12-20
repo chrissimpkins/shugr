@@ -8,11 +8,11 @@ The Emmett syntax is a magic wand for HTML (really!). Once you start using it, y
 Detailed documentation is available at [http://chrissimpkins.github.io/shugr/](http://chrissimpkins.github.io/shugr/)
 
 ### Documentation Contents
- - [Quickstart: See the Syntax in Action]()
- - [Learn the Emmett Syntax]()
- - [How to Download your HTML as a File]()
- - [How to Copy your HTML to the Clipboard]()
- - [How to Clear the Editor Contents]()
+ - [Quickstart: See the Syntax in Action](http://chrissimpkins.github.io/shugr/#syntax-example)
+ - [Learn the Emmett Syntax](http://chrissimpkins.github.io/shugr/#learn-more)
+ - [How to Download your HTML as a File](http://chrissimpkins.github.io/shugr/#how-to-download)
+ - [How to Copy your HTML to the Clipboard](http://chrissimpkins.github.io/shugr/#how-to-copy)
+ - [How to Clear the Editor Contents](http://chrissimpkins.github.io/shugr/#how-to-clear)
 
 ## Issue Reporting
 
