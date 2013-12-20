@@ -1,5 +1,6 @@
 a {
 	text-decoration: none !important;
+	color:#FFF;
 }
 
 a:hover {
@@ -9,6 +10,7 @@ a:hover {
 body {
 	background-color:#24C0EB;
 }
+
 footer{
 	height:50px;
 	width:100%;
@@ -19,9 +21,7 @@ footer{
 	padding:0;
 	color:#FFF;
 }
-a {
-	color:#FFF;
-}
+
 #star {
 	color:#223E54;
 }
@@ -54,6 +54,12 @@ a {
 .nav-button:hover {
 	color:#FFF;
 	opacity:1.0;
+	cursor:pointer;
+}
+#copybtn.zeroclipboard-is-hover {
+	color:#FFF;
+	opacity:1.0;
+	cursor:pointer;
 }
 #footerdiv {
 	margin-top:-5px;
@@ -69,6 +75,7 @@ a {
 #ghub {
 	padding-left:5px;
 }
+
 #license{
 	margin-top:-2px;
 	opacity:0.6;
@@ -76,6 +83,7 @@ a {
 	font-family: 'Lato', 'Helvetica Neue', Arial, sans !important;
 	letter-spacing:1px;
 }
+
 #license a:hover{
 	opacity:1.0;
 }

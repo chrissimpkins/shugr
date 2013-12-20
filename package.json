@@ -1,7 +1,7 @@
 {
   "name": "shugr",
-  "description": "Rapid HTML development",
-  "version": "0.0.1",
+  "description": "HTML Editor for Rapid Development with Emmett Syntax",
+  "version": "1.0.0",
   "author": {
     "name": "Christopher Simpkins",
     "email": "git.simpkins@gmail.com"
@@ -10,6 +10,7 @@
     "shugr",
     "HTML",
     "editor",
+    "emmett",
     "web",
     "markup",
     "internet",

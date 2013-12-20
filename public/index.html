@@ -2,12 +2,12 @@
 <html itemscope itemtype="http://schema.org/WebApplication" lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta itemprop="name" content="Shugr | Rapid HTML Editor with Emmett Syntax">
-	<meta itemprop="description" content="A rapid HTML editor that uses the Emmett syntax">
-	<title>Shugr | Rapid HTML File Editor with Emmett Syntax</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta itemprop="name" content="Shugr | HTML Editor for Rapid HTML Development with the Emmett Syntax">
+	<meta itemprop="description" content="An HTML editor for rapid HTML development with the Emmett syntax">
+	<title>Shugr | HTML Editor for Rapid HTML Development with the Emmett Syntax</title>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content='A rapid HTML editor that uses the Emmett syntax'>
+    <meta name="description" content='An HTML editor for rapid HTML development with the Emmett syntax'>
 	<link rel="stylesheet" href="css/codemirror.css" />
 	<link rel="stylesheet" href="css/shugr.css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
@@ -19,14 +19,17 @@
 	<script src="js/xml.js"></script>
 	<script src="js/emmet.min.js"></script>
 	<script src="js/underscore-min.js"></script>
+	<script src="js/ZeroClipboard.min.js"></script>
 	<script src="js/shugr.js"></script>
 </head>
 <body>
-	<div id="shugr-title"><img src="img/shugr-logo.png" alt="Shugr | Rapid HTML Development with the Shugr Editor"></div>
+	<div id="shugr-title"><img src="img/shugr-logo.png" alt="Shugr | HTML Editor for Rapid HTML Development with the Emmett Syntax"></div>
 	<div id="nav-panel" class="disappear">
-		<span id="dlbtn" class="fa-stack fa-lg nav-button"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-download fa-stack-1x"></i>
+		<span id="dlbtn" class="fa-stack fa-lg nav-button" title="Download Your HTML"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-download fa-stack-1x"></i>
 		</span>
-		<span id="helpbtn" class="fa-stack fa-lg nav-button"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-question fa-stack-1x"></i></span>
+		<span id="copybtn" class="fa-stack fa-lg nav-button" title="Copy Your HTML"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-clipboard fa-stack-1x"></i></span>
+		<span id="erasebtn" class="fa-stack fa-lg nav-button" title="Clear the HTML Editor"><a href="/"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-times fa-stack-1x"></i></a></span>
+		<span id="helpbtn" class="fa-stack fa-lg nav-button" title="Need Help? Click for Shugr Documentation"><a href="http://chrissimpkins.github.io/shugr"><i class="fa fa-circle-o fa-stack-2x"></i><i class="fa fa-question fa-stack-1x"></i></a></span>
 	</div>
 	<form><textarea id="code" name="code"></textarea></form>
 		<script>
@@ -36,7 +39,6 @@
 			lineNumbers : true,
 			profile: 'xhtml'
 		});
-
 		</script>
 
 		<script>

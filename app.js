@@ -21,7 +21,7 @@ else {
 
 	app.use(express.static(__dirname + '/public'));
 
-	app.use(express.limit('1000kb'));  //limit uploads to 1000kb
+	app.use(express.limit('500kb'));  //limit uploads to 500kb
 
 	/*-----------------------------------------------------------------------------------*/
 	/*	##.    ROUTES
@@ -32,7 +32,7 @@ else {
 		//res.set('Access-Control-Allow-Origin', '*');
 		//res.set('Access-Control-Allow-Headers', 'X-Requested-With');
 		var thehtml = req.body.hstring;
-			//sanitized_text = sanitize( thehtml ).escape(); // sanitize user entered text
+		//sanitized_text = sanitize( thehtml ).escape(); // sanitize user entered text
 		res.set('Content-Disposition', 'attachment; filename=index.html');
 		res.type('text/html');
 		res.send(thehtml);
