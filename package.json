@@ -1,6 +1,6 @@
 {
   "name": "shugr",
-  "description": "HTML Editor for Rapid Development with Emmett Syntax",
+  "description": "HTML Editor for Rapid Development with Emmet Syntax",
   "version": "1.0.0",
   "author": {
     "name": "Christopher Simpkins",
@@ -10,7 +10,7 @@
     "shugr",
     "HTML",
     "editor",
-    "emmett",
+    "emmet",
     "web",
     "markup",
     "internet",
