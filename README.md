@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Shugr
-=====
-=======
 <img src="http://chrissimpkins.github.io/shugr/images/shugr-title.png" alt="Shugr HTML Editor">
 
 [Shugr](http://shu.gr) is a free, open source, web browser-based HTML editor that supports rapid development of HTML with the Emmett syntax.
@@ -29,4 +25,3 @@ Contributions to the project are welcome.  Please fork the `develop` branch, mak
 ## Contact
 
 Feel free to contact me with questions that can be addressed in < 140 chars on Twitter [@csimpkins](http://twitter.com/csimpkins)
->>>>>>> d105e9618f9b9f18e695e17902e36a296ca5a56a
