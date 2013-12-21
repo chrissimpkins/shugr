@@ -1,6 +1,6 @@
 <img src="http://chrissimpkins.github.io/shugr/images/shugr-title.png" alt="Shugr HTML Editor">
 
-[Shugr](http://shu.gr) is a free, open source, web browser-based HTML editor that supports rapid development of HTML with the Emmett syntax.
+[Shugr](http://shu.gr) is a cross-platform, open source, web browser-based HTML editor that supports rapid development of HTML with the Emmett syntax.
 
 The Emmett syntax is a magic wand for HTML (really!). Once you start using it, you won't turn back.  Shugr makes it accessible from any web browser.
 
