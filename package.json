@@ -1,7 +1,7 @@
 {
   "name": "shugr",
   "description": "HTML Editor for Rapid Development with Emmet Syntax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Christopher Simpkins",
     "email": "git.simpkins@gmail.com"
